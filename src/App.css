@@ -1,0 +1,27 @@
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+}
+.navbar-logo{
+  color:rgb(255, 255, 255);
+  font-size: 30px;
+  background: black;
+}
+.navbar-menu{
+    display:flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0;
+    align-items: center;
+    background-color: black;
+}
+.navbar-menu li a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}

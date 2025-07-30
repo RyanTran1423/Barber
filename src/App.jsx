@@ -1,11 +1,22 @@
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+import './App.css';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from "./Components/Navbar";
+import Home from './Components/home';
+import Work from './Components/work';
+import Contact from './Components/contact';
+
 function App() {
   
   return(
     <>
-      <Header/>
-      <Footer/>
+
+      <Router>
+        <Routes>
+          <Route path="/" element = {<Home/>}/>
+          <Route path="/contact" element = {<Contact/>}/>
+          <Route path="/work" element = {<Work/>}/>
+        </Routes>
+      </Router>
     </>
   );
 }
